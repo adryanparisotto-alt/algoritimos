@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Missão do Cibernauta</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-digital.png" alt="Tela de login com códigos digitais">
+            <p>Você é um(a) hacker ético(a) e acaba de receber um alerta urgente: o **Código-Fonte Mestre** foi roubado da Corporação Chronos. A única pista é uma mensagem criptografada, que aponta para dois possíveis locais do primeiro acesso.</p>
+            <button class="btn-proximo" data-proximo="1">Servidor de Cingapura (Alta Segurança)</button>
+            <button class="btn-proximo" data-proximo="2">Fórum Obscuro (Baixa Visibilidade)</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você se conecta ao Servidor de Cingapura. O firewall é poderoso. Você precisa escolher sua técnica de invasão.</p>
+            <button class="btn-proximo" data-proximo="3">Usar um exploit de dia zero (Risco Alto)</button>
+            <button class="btn-proximo" data-proximo="4">Tentar engenharia social no administrador (Risco Médio)</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>No Fórum Obscuro, você encontra um usuário suspeito postando fragmentos de código. Ele está ativo em duas threads diferentes. Por onde começar?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar a thread de 'Criptografia Quântica'</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a thread de 'Mercado Negro de Dados'</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>O exploit funciona! Você acessa os logs e encontra a próxima coordenada: o rastreio aponta para uma fazenda de servidores secreta em **Islândia**.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir o rastro para Islândia</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-falha.png" alt="Tela azul de erro fatal">
+            <p>Sua tentativa de engenharia social falha. O administrador percebe a fraude e o servidor te bloqueia. Você é forçado a desconectar e perde a pista principal.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Na thread de Criptografia, você encontra um metadado oculto que revela a próxima localização: uma fazenda de servidores debaixo da terra na **Islândia**.</p>
+            <button class="btn-proximo" data-proximo="7">Rastrear o endereço IP para Islândia</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>A thread do Mercado Negro é uma distração. Você perde tempo valioso e não encontra nada. Precisa voltar à outra thread rapidamente.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e investigar a criptografia</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Na Islândia, a fazenda de servidores tem duas entradas de rede principais: uma que parece um honeypot e outra oculta. Você deve escolher por onde entrar.</p>
+            <button class="btn-proximo" data-proximo="9">Entrar pelo canal de 'Engano' (honeypot)</button>
+            <button class="btn-proximo" data-proximo="10">Tentar forçar a entrada pelo canal 'Oculto'</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Voltando para a thread de Criptografia, você finalmente encontra o metadado oculto. Destino: Islândia!</p>
+            <button class="btn-proximo" data-proximo="7">Rastrear o endereço IP para Islândia</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você usa o honeypot como distração, enganando o sistema de segurança. A porta oculta se revela e você encontra o repositório principal com o Código-Fonte Mestre!</p>
+            <button class="btn-proximo" data-proximo="11">Fazer o download e resgatar o Código</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Ao tentar forçar o canal Oculto, você dispara um alarme e seu IP é banido da rede. Você perde o acesso à fazenda de servidores.</p>
+            <button class="btn-proximo" data-proximo="12">Desconectar e tentar novamente pelo canal 'Engano'</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-vitoria.png" alt="Código-Fonte Mestre sendo resgatado">
+            <p>**MISSÃO CUMPRIDA!** Você resgata o Código-Fonte Mestre, neutraliza a ameaça e é aclamado como um herói cibernético, garantindo a segurança de toda a rede global.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você se reconecta, usa o canal de Engano como distração, e finalmente acessa o repositório principal com o Código-Fonte Mestre.</p>
+            <button class="btn-proximo" data-proximo="11">Fazer o download e resgatar o Código</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

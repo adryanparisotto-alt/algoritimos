@@ -1,0 +1,106 @@
+:root {
+    --cor-fundo: #121212;
+    --cor-texto: #00FF41; /* Neon Green */
+    --cor-acento: #008822; /* Botão base */
+    --largura-max: 600px;
+}
+
+body {
+    background-color: var(--cor-fundo); 
+    color: var(--cor-texto); 
+    font-family: "Bai Jamjuree", sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Efeito sutil de scanline, como em monitores CRT */
+    background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 100% 3px;
+}
+
+main {
+    text-align: center;
+    max-width: var(--largura-max);
+    width: 100%;
+    padding: 30px;
+    border: 2px solid var(--cor-texto); 
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.5); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 5px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Efeito de glitch sutil no hover do container principal */
+main:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 65, 0.8), 0 0 5px rgba(0, 255, 65, 0.3); 
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    /* Animação de digitação */
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button {
+    background-color: var(--cor-acento); 
+    color: #FFFFFF;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1em;
+    padding: 12px 25px;
+    margin: 10px;
+    border: 1px solid var(--cor-texto);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--cor-texto); 
+    color: var(--cor-fundo);
+    box-shadow: 0 0 12px var(--cor-texto);
+    transform: translateY(-2px);
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-texto);
+    /* Efeito de TV antiga */
+    filter: brightness(1.2) contrast(1.1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 650px) {
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    button {
+        display: block; /* Botões empilhados em telas menores */
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
